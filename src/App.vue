@@ -4,9 +4,8 @@
 			<app-header></app-header>
 
 			<div class="hero-body">
-				<div class="container has-text-centered">
-					<h1 class="title">Title</h1>
-					<h2 class="subtitle">Subtitle</h2>
+				<div class="container">
+					<router-view></router-view>
 				</div>
 			</div>
 
@@ -17,11 +16,11 @@
 
 <script>
 	import AppHeader from "./components/AppHeader.vue";
-	import AppFooter from "./components/AppFooter.vue"
+	import AppFooter from "./components/AppFooter.vue";
 
 	export default {
-		name: "App",
-		components: {
+		name: "App"
+		, components: {
 			AppHeader
 			, AppFooter
 		}
@@ -30,6 +29,6 @@
 
 <style>
 	body {
-		background: #eee;
+		background: #FF5A5F;
 	}
 </style>
